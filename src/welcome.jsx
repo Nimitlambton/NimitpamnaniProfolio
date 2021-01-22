@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import Nav from "./Components/nav";
 import Footer from "./Components/footer";
 import Stage from "./Components/stage";
