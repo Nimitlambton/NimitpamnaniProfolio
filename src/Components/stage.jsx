@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
-import Projects from "./pages/projects";
+import Projects from "./pages/projects/projects";
 
 class Stage extends React.Component {
   constructor(props) {

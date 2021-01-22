@@ -12,7 +12,7 @@ class Home extends Component {
     return (
       <>
         <div>
-          <Row className="justify-content-md-center">
+          <Row>
             <Col md="auto">
               <Image
                 src="https://scontent.fdel20-1.fna.fbcdn.net/v/t31.0-8/11063426_903087189734684_4639040271096422440_o.jpg?_nc_cat=110&ccb=2&_nc_sid=174925&_nc_ohc=0vf2ZomJx4wAX8m7dix&_nc_ht=scontent.fdel20-1.fna&oh=b91c9d907ed784ed384ffaf5a08fa265&oe=602EA202"
@@ -20,14 +20,16 @@ class Home extends Component {
                 height="400 "
                 width="400"></Image>
             </Col>
-            <Col className="m2">
-              <div className="xs={6} md={6}">
+            <Col>
+              <div>
                 <Jumbotron>
                   <h1>Hi 👋 , Thanks for Stoping by </h1>
                   <p>
                     I am Nimit pamnani ✨ Mobile & web developer 💻 || Amateur
-                    Photographer 📸
+                    Photographer 📸 .
                   </p>
+
+                  <p>Currently learning MERN Stack & ReactNative </p>
                 </Jumbotron>
               </div>
             </Col>
