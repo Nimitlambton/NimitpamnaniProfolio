@@ -1,4 +1,6 @@
 import React from "react";
+import Home from "./pages/Home";
+import Projects from "./pages/projects";
 
 class Stage extends React.Component {
   constructor(props) {
@@ -8,10 +10,10 @@ class Stage extends React.Component {
   render() {
     switch (this.props.stage) {
       case "home":
-        return <> This is home </>;
+        return <Home> </Home>;
 
       case "projects":
-        return <> This is projects </>;
+        return <Projects></Projects>;
 
       case "Designs":
         return <> This is Designs </>;
