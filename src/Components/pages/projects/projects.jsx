@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { ReactComponent as YourSvg } from "./freelance.svg";
+//import { ReactComponent as YourSvg } from "./freelance.svg";
 import Background from "./freelance.svg";
 
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Projects extends Component {
