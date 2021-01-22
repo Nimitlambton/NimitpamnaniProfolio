@@ -22,7 +22,7 @@ class Welcome extends Component {
     return (
       <>
         <Nav stage={this.changeStageType}></Nav>
-        <main className=" fluid-container">
+        <main className="fluid-container">
           <Stage stage={this.state.StageType}> </Stage>
           <Footer></Footer>
         </main>
