@@ -8,9 +8,10 @@ class Projects extends Component {
   render() {
     return (
       <>
-        <h1> This is project </h1>
-
-        <YourSvg></YourSvg>
+        <h1> </h1>
+        <div>
+          <YourSvg></YourSvg>
+        </div>
       </>
     );
   }

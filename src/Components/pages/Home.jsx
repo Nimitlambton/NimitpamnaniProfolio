@@ -25,7 +25,7 @@ class Home extends Component {
                 <Jumbotron>
                   <h1>Hi 👋 , Thanks for Stoping by </h1>
                   <p>
-                    I am is Nimit pamnani ✨
+                    I am Nimit pamnani ✨
                     <p>Mobile & web developer 💻 || Amateur Photographer 📸 </p>
                   </p>
                 </Jumbotron>
