@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import { ReactComponent as YourSvg } from "./freelance.svg";
 import { Jumbotron, Button, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
