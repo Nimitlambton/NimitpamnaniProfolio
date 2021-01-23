@@ -16,11 +16,12 @@ class Projects extends Component {
         status: "completed",
       },
       {
-        title: "MemeNator",
+        title: "Personal protfolio",
         projectId: 2,
-        desc: "This is my first project, that is build on React.js",
-        repolink: "",
-        DeployedLink: "",
+        desc:
+          "This is react based responsive Web App , used to showcase all the projects that are created till now ",
+        repolink: "https://github.com/Nimitlambton/NimitpamnaniProfolio",
+        DeployedLink: "https://nimitpamnani.rocks/#home",
         status: "",
       },
       {
