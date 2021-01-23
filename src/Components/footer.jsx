@@ -7,7 +7,7 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <footer className="bg- text-center text-lg-start">
+      <footer className="bg-text-center text-lg-start m-6 ">
         <div className="text-center p-3">
           © 2020 Copyright: Nimit pamnani || Made with &hearts; in Toronto
           <span role="img" aria-label="flagCanada">

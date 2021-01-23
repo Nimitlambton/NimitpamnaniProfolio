@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import { ReactComponent as YourSvg } from "./freelance.svg";
 import Background from "./freelance.svg";
 import Project from "./project";
-import { Container, Row, Col } from "react-bootstrap";
+import { CardDeck } from "react-bootstrap";
 
 class Projects extends Component {
   state = {
@@ -14,6 +14,22 @@ class Projects extends Component {
         repolink: "https://github.com/Nimitlambton/MN",
         DeployedLink: "https://meme-nator.netlify.app",
         status: "completed",
+      },
+      {
+        title: "MemeNator",
+        projectId: 2,
+        desc: "This is my first project, that is build on React.js",
+        repolink: "",
+        DeployedLink: "",
+        status: "",
+      },
+      {
+        title: "MemeNator",
+        projectId: 2,
+        desc: "This is my first project, that is build on React.js",
+        repolink: "",
+        DeployedLink: "",
+        status: "",
       },
       {
         title: "MemeNator",
@@ -40,18 +56,13 @@ class Projects extends Component {
             height: "400px",
             backgroundRepeat: "no-repeat",
             background: "transparent",
+            margin: " 2px",
           }}>
-          <Container>
-            <Row>
-              {this.state.projects.map((project) => (
-                <Col>
-                  <Project
-                    projectData={project}
-                    key={project.projectId}></Project>
-                </Col>
-              ))}
-            </Row>
-          </Container>
+          <CardDeck className="justify-content-md-center">
+            {this.state.projects.map((project) => (
+              <Project projectData={project} key={project.projectId}></Project>
+            ))}
+          </CardDeck>
         </div>
       </>
     );

@@ -22,10 +22,21 @@ class Welcome extends Component {
     return (
       <>
         <Nav stage={this.changeStageType}></Nav>
-        <main className="fluid-container m-4">
+        <main
+          className="fluid-container m-4"
+          style={{
+            minHeight: "80vh",
+            overflow: "scroll",
+            display: "block",
+            position: "relative",
+            paddingbottom: "100",
+          }}>
           <Stage stage={this.state.StageType}> </Stage>
-          <Footer></Footer>
         </main>
+
+        <div className="fluid-container height-auto">
+          <Footer></Footer>
+        </div>
       </>
     );
   }
