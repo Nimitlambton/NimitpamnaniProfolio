@@ -1,11 +1,29 @@
 import React, { Component } from "react";
 //import { ReactComponent as YourSvg } from "./freelance.svg";
 import Background from "./freelance.svg";
-
-import { Card } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Project from "./project";
+import { Container, Row, Col } from "react-bootstrap";
 
 class Projects extends Component {
+  state = {
+    projects: [
+      {
+        title: "MemeNator",
+        projectId: 1,
+        desc: "This is my first project, that is build on React.js",
+        repolink: "",
+        DeployedLink: "",
+      },
+      {
+        title: "MemeNator",
+        projectId: 2,
+        desc: "This is my first project, that is build on React.js",
+        repolink: "",
+        DeployedLink: "",
+      },
+    ],
+  };
+
   constructor(props) {
     super();
   }
@@ -19,18 +37,19 @@ class Projects extends Component {
             width: "100%",
             height: "400px",
             backgroundRepeat: "no-repeat",
+            background: "transparent",
           }}>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={Background} />
-            <Card.Body>
-              <Card.Title>Dummy project</Card.Title>
-              <Card.Text>This is Dummy project</Card.Text>
-            </Card.Body>
-            <Card.Body>
-              <Card.Link href="#">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-          </Card>
+          <Container fluid>
+            <Row>
+              {this.state.projects.map((project) => (
+                <Col>
+                  <Project
+                    projectData={project}
+                    key={project.projectId}></Project>
+                </Col>
+              ))}
+            </Row>
+          </Container>
         </div>
       </>
     );
