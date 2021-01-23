@@ -11,16 +11,20 @@ class Project extends React.Component {
   }
 
   render() {
+    const { title, desc, repolink, DeployedLink } = this.props.projectData;
+
     return (
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "15rem" }}>
         <Card.Img variant="top" src={Background} />
         <Card.Body>
-          <Card.Title> {this.props.projectData.title} </Card.Title>
-          <Card.Text> {this.props.projectData.desc}</Card.Text>
+          <Card.Title> {title} </Card.Title>
+          <Card.Text> {desc}</Card.Text>
         </Card.Body>
         <Card.Body>
-          <Card.Link href={this.props.projectData.repolink}>Github</Card.Link>
-          <Card.Link href={this.props.projectData.DeployedLink}>
+          <Card.Link href={repolink} target="_blank">
+            Github
+          </Card.Link>
+          <Card.Link href={DeployedLink} target="_blank">
             View Live
           </Card.Link>
         </Card.Body>

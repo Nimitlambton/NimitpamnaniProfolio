@@ -11,8 +11,9 @@ class Projects extends Component {
         title: "MemeNator",
         projectId: 1,
         desc: "This is my first project, that is build on React.js",
-        repolink: "",
-        DeployedLink: "",
+        repolink: "https://github.com/Nimitlambton/MN",
+        DeployedLink: "https://meme-nator.netlify.app",
+        status: "completed",
       },
       {
         title: "MemeNator",
@@ -20,6 +21,7 @@ class Projects extends Component {
         desc: "This is my first project, that is build on React.js",
         repolink: "",
         DeployedLink: "",
+        status: "",
       },
     ],
   };
@@ -39,7 +41,7 @@ class Projects extends Component {
             backgroundRepeat: "no-repeat",
             background: "transparent",
           }}>
-          <Container fluid>
+          <Container>
             <Row>
               {this.state.projects.map((project) => (
                 <Col>
