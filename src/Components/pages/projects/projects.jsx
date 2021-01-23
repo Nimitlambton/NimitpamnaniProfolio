@@ -13,6 +13,7 @@ class Projects extends Component {
         desc: "This is my first project, that is build on React.js  ",
         repolink: "https://github.com/Nimitlambton/MN",
         DeployedLink: "https://meme-nator.netlify.app",
+        thumbnail: "  ",
         status: "completed",
       },
       {
@@ -22,6 +23,7 @@ class Projects extends Component {
           "This is react based responsive Web App , used to showcase all the projects that are created till now ",
         repolink: "https://github.com/Nimitlambton/NimitpamnaniProfolio",
         DeployedLink: "https://nimitpamnani.rocks/#home",
+        thumbnail: "  ",
         status: "completed",
       },
       {
@@ -29,6 +31,7 @@ class Projects extends Component {
         projectId: 3,
         desc: "This is my first project, that is build on React.js",
         repolink: "",
+        thumbnail: "  ",
         DeployedLink: "",
         status: "",
       },
@@ -36,6 +39,7 @@ class Projects extends Component {
         title: "MemeNator",
         projectId: 4,
         desc: "This is my first project, that is build on React.js",
+        thumbnail: "  ",
         repolink: "",
         DeployedLink: "",
         status: "",

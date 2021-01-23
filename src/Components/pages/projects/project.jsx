@@ -17,36 +17,35 @@ class Project extends React.Component {
       repolink,
       DeployedLink,
       status,
+      thumbnail,
     } = this.props.projectData;
 
-    {
-      if (status == "") {
-        return (
-          <div>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={Background} />
-              <Card.Body>
-                <Card.Title> {title} </Card.Title>
-                <Card.Text> Dummy</Card.Text>
-              </Card.Body>
-              <Card.Body>
-                <Card.Link href={repolink} target="_blank">
-                  Github
-                </Card.Link>
-                <Card.Link href={DeployedLink} target="_blank">
-                  View Live
-                </Card.Link>
-              </Card.Body>
-            </Card>
-          </div>
-        );
-      }
+    if (status === "") {
+      return (
+        <div>
+          <Card style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={Background} />
+            <Card.Body>
+              <Card.Title> {title} </Card.Title>
+              <Card.Text> Dummy</Card.Text>
+            </Card.Body>
+            <Card.Body>
+              <Card.Link href={repolink} target="_blank">
+                Github
+              </Card.Link>
+              <Card.Link href={DeployedLink} target="_blank">
+                View Live
+              </Card.Link>
+            </Card.Body>
+          </Card>
+        </div>
+      );
     }
 
     return (
       <div>
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={Background} />
+          <Card.Img variant="top" src={thumbnail} />
           <Card.Body>
             <Card.Title> {title} </Card.Title>
             <Card.Text> {desc}</Card.Text>
