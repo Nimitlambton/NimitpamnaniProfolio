@@ -1,24 +1,25 @@
-import React, { Component } from "react";
-import { Card } from "react-bootstrap";
+import { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-class Design extends Component {
+import { Card } from "react-bootstrap";
+class Blog extends Component {
   constructor(props) {
     super();
   }
 
   render() {
-    const { title, desc, status, key } = this.props.Design;
+    const { title, thumbnail, desc, link } = this.props.blogData;
 
     return (
       <div>
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={key} />
+          <Card.Img variant="top" src={thumbnail} />
           <Card.Body>
             <Card.Title> {title} </Card.Title>
             <Card.Text> {desc}</Card.Text>
           </Card.Body>
           <Card.Body>
-            <Card.Link href={status} target="_blank">
+            <hr></hr>
+            <Card.Link href={link} target="_blank">
               <FontAwesomeIcon icon="external-link-alt" size="lg" />
             </Card.Link>
           </Card.Body>
@@ -28,4 +29,4 @@ class Design extends Component {
   }
 }
 
-export default Design;
+export default Blog;

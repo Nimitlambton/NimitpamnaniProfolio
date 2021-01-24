@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-
 import { Jumbotron, Image, Row, Col } from "react-bootstrap";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Home extends Component {
@@ -28,12 +29,34 @@ class Home extends Component {
                     I am Nimit pamnani ✨ Mobile & web developer 💻 || Amateur
                     Photographer 📸 .
                   </p>
-
                   <p>Currently learning MERN Stack & ReactNative </p>
+
                   <button className="btn-primary rounded">
-                    {" "}
-                    Download Resume{" "}
+                    Download Resume
                   </button>
+                  <p>
+                    &nbsp; &nbsp;
+                    <a
+                      href="https://github.com/nimitlambton"
+                      target="_blank"
+                      rel="noreferrer">
+                      <FontAwesomeIcon icon={["fab", "github"]} size="lg" />{" "}
+                    </a>
+                    &nbsp; &nbsp;
+                    <a
+                      href="https://www.linkedin.com/in/nimitpamnani/"
+                      target="_blank"
+                      rel="noreferrer">
+                      <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
+                    </a>
+                    &nbsp; &nbsp;
+                    <a
+                      href="https://www.instagram.com/nimit_pamnani/"
+                      target="_blank"
+                      rel="noreferrer">
+                      <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
+                    </a>
+                  </p>
                 </Jumbotron>
               </div>
             </Col>

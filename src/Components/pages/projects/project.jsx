@@ -30,6 +30,7 @@ class Project extends React.Component {
               <Card.Text> Dummy</Card.Text>
             </Card.Body>
             <Card.Body>
+              <hr></hr>
               <Card.Link href={repolink} target="_blank">
                 <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
               </Card.Link>
@@ -51,9 +52,12 @@ class Project extends React.Component {
             <Card.Text> {desc}</Card.Text>
           </Card.Body>
           <Card.Body>
+            <hr></hr>
+
             <Card.Link href={repolink} target="_blank">
               <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
             </Card.Link>
+
             <Card.Link href={DeployedLink} target="_blank">
               <FontAwesomeIcon icon="external-link-alt" size="lg" />
             </Card.Link>
