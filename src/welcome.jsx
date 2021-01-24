@@ -5,12 +5,7 @@ import Stage from "./Components/stage";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import {
-  faCheckSquare,
-  faCoffee,
-  faEye,
-  faExternalLinkAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 class Welcome extends Component {
   constructor(props) {
@@ -19,7 +14,7 @@ class Welcome extends Component {
       StageType: "home",
     };
 
-    library.add(fab, faCheckSquare, faCoffee, faEye, faExternalLinkAlt);
+    library.add(fab, faExternalLinkAlt);
     this.changeStageType = this.changeStageType.bind(this);
   }
 

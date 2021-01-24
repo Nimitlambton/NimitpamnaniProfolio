@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./pages/Home";
 import Projects from "./pages/projects/projects";
-
+import Designs from "./pages/Designs/Designs";
 class Stage extends React.Component {
   constructor(props) {
     super();
@@ -16,7 +16,7 @@ class Stage extends React.Component {
         return <Projects></Projects>;
 
       case "Designs":
-        return <> This is Designs </>;
+        return <Designs></Designs>;
 
       case "blog":
         return <> This is Blogs </>;
