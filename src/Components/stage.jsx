@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/projects/projects";
 import Designs from "./pages/Designs/Designs";
 import Blogs from "./pages/Blogs/Blogs";
+import Contact from "./pages/contact";
 class Stage extends React.Component {
   constructor(props) {
     super();
@@ -23,7 +24,7 @@ class Stage extends React.Component {
         return <Blogs> </Blogs>;
 
       case "contact":
-        return <> This is contact </>;
+        return <Contact> </Contact>;
 
       default:
         return <> Error 404 </>;

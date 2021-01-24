@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Nav from "./Components/nav";
 import Footer from "./Components/footer";
 import Stage from "./Components/stage";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
