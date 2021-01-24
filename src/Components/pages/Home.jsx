@@ -30,6 +30,10 @@ class Home extends Component {
                   </p>
 
                   <p>Currently learning MERN Stack & ReactNative </p>
+                  <button className="btn-primary rounded">
+                    {" "}
+                    Download Resume{" "}
+                  </button>
                 </Jumbotron>
               </div>
             </Col>

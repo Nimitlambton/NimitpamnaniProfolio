@@ -3,11 +3,11 @@ import Background from "./freelance.svg";
 import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 class Project extends React.Component {
   constructor(props) {
     super();
-
-    this.state = {};
   }
 
   render() {
@@ -31,10 +31,10 @@ class Project extends React.Component {
             </Card.Body>
             <Card.Body>
               <Card.Link href={repolink} target="_blank">
-                Github
+                <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
               </Card.Link>
               <Card.Link href={DeployedLink} target="_blank">
-                View Live
+                <FontAwesomeIcon icon="external-link-alt" size="lg" />
               </Card.Link>
             </Card.Body>
           </Card>
@@ -52,10 +52,10 @@ class Project extends React.Component {
           </Card.Body>
           <Card.Body>
             <Card.Link href={repolink} target="_blank">
-              Github
+              <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
             </Card.Link>
             <Card.Link href={DeployedLink} target="_blank">
-              View Live
+              <FontAwesomeIcon icon="external-link-alt" size="lg" />
             </Card.Link>
           </Card.Body>
         </Card>

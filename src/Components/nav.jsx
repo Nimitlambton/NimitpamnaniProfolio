@@ -24,9 +24,9 @@ class nav extends React.Component {
             <Nav.Link onClick={() => this.props.stage("Designs")}>
               Designs
             </Nav.Link>
-            <Nav.Link onClick={() => this.props.stage("blog")}> blogs</Nav.Link>
+            <Nav.Link onClick={() => this.props.stage("blog")}> Blogs</Nav.Link>
             <Nav.Link onClick={() => this.props.stage("contact")}>
-              contact
+              Contact
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
