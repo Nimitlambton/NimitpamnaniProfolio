@@ -20,6 +20,7 @@ class Project extends React.Component {
       thumbnail,
     } = this.props.projectData;
 
+    console.log("img " + thumbnail);
     if (status === "") {
       return (
         <div>
@@ -46,7 +47,7 @@ class Project extends React.Component {
     return (
       <div>
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={thumbnail} />
+          <Card.Img variant="top" src={thumbnail} data={thumbnail} />
           <Card.Body>
             <Card.Title> {title} </Card.Title>
             <Card.Text> {desc}</Card.Text>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Jumbotron, Image, Row, Col } from "react-bootstrap";
+import { Jumbotron, Image, Row, Col, Badge } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,7 +35,8 @@ class Home extends Component {
                     Download Resume
                   </button>
                   <p>
-                    &nbsp; &nbsp;
+                    <br></br>
+                    <Badge> Lets connect : </Badge> &nbsp; &nbsp;
                     <a
                       href="https://github.com/nimitlambton"
                       target="_blank"

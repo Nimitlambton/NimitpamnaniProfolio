@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Background from "./freelance.svg";
 import Project from "./project";
 import { CardDeck } from "react-bootstrap";
+import protfolioImg from "./protfolio.svg";
 
 class Projects extends Component {
   state = {
@@ -14,18 +15,18 @@ class Projects extends Component {
           "This is my first project, that is build on React.js. It can be used to generate cool meme and edit images   ",
         repolink: "https://github.com/Nimitlambton/MN",
         DeployedLink: "https://meme-nator.netlify.app",
-        thumbnail: "  ",
+        thumbnail: Background,
         status: "completed",
       },
       {
         title: "Personal protfolio",
+        status: "completed",
         projectId: 2,
         desc:
           "This is react based responsive Web App , used to showcase all the projects that are created till now ",
         repolink: "https://github.com/Nimitlambton/NimitpamnaniProfolio",
         DeployedLink: "https://nimitpamnani.rocks/#home",
-        thumbnail: "  ",
-        status: "completed",
+        thumbnail: protfolioImg,
       },
       {
         title: "MemeNator",
