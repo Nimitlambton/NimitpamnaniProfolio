@@ -9,13 +9,13 @@ class Designs extends Component {
         title: "DummyDesigns",
         desc: "this is dummy description",
         staus: "completed",
-        key: 0,
+        id: 0,
       },
       {
         title: "DummyDesigns",
         desc: "this is dummy description",
         staus: "completed",
-        key: 1,
+        id: 1,
       },
     ],
   };
@@ -38,7 +38,11 @@ class Designs extends Component {
           </div>
           <CardDeck className="justify-content-md-center">
             {this.state.Designs.map((CurrentDesigns) => {
-              return <Design Design={CurrentDesigns}> </Design>;
+              return (
+                <Design
+                  Design={CurrentDesigns}
+                  key={CurrentDesigns.id}></Design>
+              );
             })}
           </CardDeck>
         </div>
