@@ -8,7 +8,7 @@ class Designs extends Component {
       {
         title: "DummyDesigns",
         desc: "this is dummy description",
-        staus: "completed",
+        staus: "completd",
         id: 0,
       },
       {
