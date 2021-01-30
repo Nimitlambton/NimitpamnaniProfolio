@@ -4,6 +4,7 @@ import Background from "./freelance.svg";
 import Project from "./project";
 import { CardDeck } from "react-bootstrap";
 import protfolioImg from "./protfolio.svg";
+import Weather from "./weather.svg";
 
 class Projects extends Component {
   state = {
@@ -29,21 +30,21 @@ class Projects extends Component {
         thumbnail: protfolioImg,
       },
       {
-        title: "MemeNator",
+        title: "The Weather App",
         projectId: 3,
-        desc: "This is my first project, that is build on React.js",
-        repolink: "",
-        thumbnail: "  ",
-        DeployedLink: "",
-        status: "",
+        desc:
+          "This is weatherApp based on React.js , it can be used to fetch weather of any City in the world 🌏 ",
+        repolink: "https://github.com/Nimitlambton/weatherApp",
+        thumbnail: Weather,
+        DeployedLink: "https://nimit-theweatherapp.netlify.app/",
+        status: "completed",
       },
       {
         title: "MemeNator",
         projectId: 4,
         desc: "This is my first project, that is build on React.js",
-        thumbnail: "  ",
+        thumbnail: "",
         repolink: "",
-        DeployedLink: "",
         status: "",
       },
     ],
