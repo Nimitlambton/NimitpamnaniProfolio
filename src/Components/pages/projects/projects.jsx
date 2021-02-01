@@ -20,7 +20,7 @@ class Projects extends Component {
         status: "completed",
       },
       {
-        title: "Personal protfolio",
+        title: "Personal portfolio",
         status: "completed",
         projectId: 2,
         desc:
