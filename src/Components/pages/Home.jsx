@@ -4,6 +4,8 @@ import { Jumbotron, Image, Row, Col, Badge } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Resume from "../Assets/Resume.pdf";
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -31,9 +33,11 @@ class Home extends Component {
                   </p>
                   <p>Currently learning MERN Stack & ReactNative </p>
 
-                  <button className="btn-primary rounded">
-                    Download Resume
-                  </button>
+                  <a href={Resume} download="Nimitpamnani">
+                    <button className="btn-primary rounded">
+                      Download Resume
+                    </button>
+                  </a>
                   <p>
                     <br></br>
                     <Badge> Lets connect : </Badge> &nbsp; &nbsp;
