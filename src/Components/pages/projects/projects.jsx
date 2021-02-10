@@ -45,7 +45,7 @@ class Projects extends Component {
         desc: "This is my first project, that is build on React.js",
         thumbnail: "",
         repolink: "",
-        status: "completed",
+        status: "",
       },
     ],
   };
