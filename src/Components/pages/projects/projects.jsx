@@ -31,7 +31,7 @@ class Projects extends Component {
       },
       {
         title: "The Weather App",
-
+        projectId: 3,
         desc:
           "This is weatherApp based on React.js , it can be used to fetch weather of any City in the world 🌏 ",
         repolink: "https://github.com/Nimitlambton/weatherApp",
