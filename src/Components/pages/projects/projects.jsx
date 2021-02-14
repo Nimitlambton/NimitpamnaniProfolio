@@ -13,7 +13,7 @@ class Projects extends Component {
         title: "MemeNator",
         projectId: 1,
         desc:
-          "This is my first project, that is build on React.js. It can be used to generate cool meme and edit images   ",
+          "This is my first project, that is build on React.js. It can be used to generate cool meme and edit images",
         repolink: "https://github.com/Nimitlambton/MN",
         DeployedLink: "https://meme-nator.netlify.app",
         thumbnail: Background,
