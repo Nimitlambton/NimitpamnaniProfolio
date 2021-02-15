@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Resume from "../Assets/Resume.pdf";
-
+//coment
 class Home extends Component {
   constructor(props) {
     super(props);
