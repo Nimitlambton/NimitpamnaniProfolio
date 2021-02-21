@@ -3,8 +3,9 @@ import { Jumbotron, Image, Row, Col, Badge } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Resume from "../Assets/Resume.pdf";
+
+import HeroImg from "../Assets/heroImg.jpg";
 
 //Coment
 class Home extends Component {
@@ -19,7 +20,7 @@ class Home extends Component {
           <Row>
             <Col md="auto">
               <Image
-                src="https://scontent.fdel20-1.fna.fbcdn.net/v/t31.0-8/11063426_903087189734684_4639040271096422440_o.jpg?_nc_cat=110&ccb=3&_nc_sid=174925&_nc_ohc=kAFS-ZTj4xYAX9CPeM6&_nc_ht=scontent.fdel20-1.fna&oh=d5db1fd7529d0e42e12b009a41469ad0&oe=60562F02"
+                src={HeroImg}
                 roundedCircle
                 height="400 "
                 width="400"></Image>
