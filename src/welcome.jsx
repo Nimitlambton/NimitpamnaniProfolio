@@ -19,7 +19,7 @@ class Welcome extends Component {
     fetch("https://back-portfolio.netlify.app/.netlify/functions/api").then(
       (res) => {
         res.json().then((res) => {
-          console.log(res);
+          console.log(res.hello);
         });
       }
     );
