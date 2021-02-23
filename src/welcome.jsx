@@ -16,11 +16,13 @@ class Welcome extends Component {
     library.add(fab, faExternalLinkAlt);
     this.changeStageType = this.changeStageType.bind(this);
 
-    fetch(
-      "https://hopeful-wilson-292582.netlify.app/.netlify/functions/api"
-    ).then((res) => {
-      console.log(res);
-    });
+    fetch("https://back-portfolio.netlify.app/.netlify/functions/api").then(
+      (res) => {
+        res.json().then((res) => {
+          console.log(res);
+        });
+      }
+    );
   }
 
   changeStageType(type) {
