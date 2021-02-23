@@ -3,8 +3,9 @@ import { Jumbotron, Image, Row, Col, Badge } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Resume from "../Assets/Resume.pdf";
 
+//static Assets
+import Resume from "../Assets/Resume.pdf";
 import HeroImg from "../Assets/heroImg.jpg";
 
 //Coment

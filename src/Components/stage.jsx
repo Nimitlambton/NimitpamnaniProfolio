@@ -4,6 +4,7 @@ import Projects from "./pages/projects/projects";
 import Designs from "./pages/Designs/Designs";
 import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/contact";
+
 class Stage extends React.Component {
   constructor(props) {
     super();
