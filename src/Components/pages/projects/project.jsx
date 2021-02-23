@@ -42,9 +42,6 @@ class Project extends React.Component {
       );
     }
 
-    {
-      console.log(thumbnail);
-    }
     return (
       <div>
         <Card style={{ width: "18rem" }}>
