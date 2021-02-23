@@ -12,7 +12,19 @@ import HeroImg from "../Assets/heroImg.jpg";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      jumbtron: [],
+    };
+  }
+
+  componentDidMount() {
+    fetch(
+      "https://back-portfolio.netlify.app/.netlify/functions/api/jumbtron"
+    ).then((res) => {
+      res.json().then((res) => {
+        this.setState({ jumbtron: res });
+      });
+    });
   }
   render() {
     return (
@@ -29,12 +41,9 @@ class Home extends Component {
             <Col>
               <div>
                 <Jumbotron>
-                  <h1>Hi 👋 , Thanks for Stoping by </h1>
-                  <p>
-                    I am Nimit pamnani ✨ Mobile & web developer 💻 || Amateur
-                    Photographer 📸 .
-                  </p>
-                  <p>Currently learning MERN Stack & ReactNative </p>
+                  <h1>{this.state.jumbtron.h1} </h1>
+                  <p>{this.state.jumbtron.p2}</p>
+                  <p>{this.state.jumbtron.p} </p>
 
                   <a href={Resume} download="Nimitpamnani">
                     <button className="btn-primary rounded">

@@ -2,7 +2,6 @@ import React from "react";
 import Background from "./freelance.svg";
 import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Project extends React.Component {
@@ -20,7 +19,6 @@ class Project extends React.Component {
       thumbnail,
     } = this.props.projectData;
 
-    console.log("img " + thumbnail);
     if (status === "") {
       return (
         <div>
@@ -44,10 +42,14 @@ class Project extends React.Component {
       );
     }
 
+    {
+      console.log(thumbnail);
+    }
     return (
       <div>
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={thumbnail} data={thumbnail} />
+          <Card.Img variant="top" src={thumbnail} />
+
           <Card.Body>
             <Card.Title> {title} </Card.Title>
             <Card.Text> {desc}</Card.Text>

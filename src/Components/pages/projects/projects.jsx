@@ -8,6 +8,8 @@ import Weather from "./weather.svg";
 
 class Projects extends Component {
   state = {
+    projectList: [],
+
     projects: [
       {
         title: "MemeNator",
@@ -52,6 +54,17 @@ class Projects extends Component {
 
   constructor(props) {
     super();
+  }
+
+  componentDidMount() {
+    fetch("http://localhost:9000/.netlify/functions/api/projects").then(
+      (res) => {
+        res.json().then((res) => {
+          console.log(res.projectsList);
+          this.setState({ projectList: res.projectsList });
+        });
+      }
+    );
   }
 
   render() {
