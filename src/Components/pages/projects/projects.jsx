@@ -8,7 +8,7 @@ import Weather from "./weather.svg";
 
 class Projects extends Component {
   state = {
-    //ApiArray...
+    //ApiArray......
     projectList: [],
 
     projects: [
