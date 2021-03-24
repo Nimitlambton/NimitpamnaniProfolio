@@ -5,7 +5,7 @@ import Project from "./project";
 import { CardDeck } from "react-bootstrap";
 import protfolioImg from "./protfolio.svg";
 import Weather from "./weather.svg";
-//commit
+
 class Projects extends Component {
   state = {
     //ApiArray......
