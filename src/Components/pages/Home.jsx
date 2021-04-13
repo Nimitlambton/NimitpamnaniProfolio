@@ -8,8 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Resume from "../Assets/Resume.pdf";
 import HeroImg from "../Assets/heroImg.jpg";
 
-
-
+//dummy
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +16,6 @@ class Home extends Component {
       jumbtron: [],
     };
   }
-
 
   componentDidMount() {
     fetch(
