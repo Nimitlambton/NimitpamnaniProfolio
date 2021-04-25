@@ -21,12 +21,12 @@ class nav extends React.Component {
             <Nav.Link onClick={() => this.props.stage("projects")}>
               Projects
             </Nav.Link>
-            <Nav.Link onClick={() => this.props.stage("Designs")}>
+            {/* <Nav.Link onClick={() => this.props.stage("Designs")}>
               Designs
             </Nav.Link>
-            <Nav.Link onClick={() => this.props.stage("blog")}> Blogs</Nav.Link>
+            <Nav.Link onClick={() => this.props.stage("blog")}> Blogs</Nav.Link> */}
             <Nav.Link onClick={() => this.props.stage("contact")}>
-              Contact
+              Contact Me
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
