@@ -18,13 +18,13 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    fetch(
-      "https://back-portfolio.netlify.app/.netlify/functions/api/jumbtron"
-    ).then((res) => {
-      res.json().then((res) => {
-        this.setState({ jumbtron: res });
-      });
-    });
+    fetch("https://nimit-portfolio-backend.herokuapp.com/jumbtron").then(
+      (res) => {
+        res.json().then((res) => {
+          this.setState({ jumbtron: res });
+        });
+      }
+    );
   }
   render() {
     return (

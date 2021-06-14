@@ -81,7 +81,7 @@ class Projects extends Component {
             margin: " 2px",
           }}>
           <CardDeck className="justify-content-md-center">
-            {this.state.projects.map((project) => (
+            {this.state.projectList.map((project) => (
               <Project projectData={project} key={project.projectId}></Project>
             ))}
           </CardDeck>

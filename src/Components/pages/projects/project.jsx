@@ -46,7 +46,6 @@ class Project extends React.Component {
       <div>
         <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src={thumbnail} />
-
           <Card.Body>
             <Card.Title> {title} </Card.Title>
             <Card.Text> {desc}</Card.Text>
