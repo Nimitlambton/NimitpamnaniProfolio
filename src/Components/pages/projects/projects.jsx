@@ -58,7 +58,7 @@ class Projects extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:9000/.netlify/functions/api/projects").then(
+    fetch("https://nimit-portfolio-backend.herokuapp.com/projects").then(
       (res) => {
         res.json().then((res) => {
           console.log(res.projectsList);
