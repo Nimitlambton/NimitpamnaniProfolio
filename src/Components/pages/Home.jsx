@@ -18,6 +18,14 @@ class Home extends Component {
   }
 
   componentDidMount() {
+    fetch("https://nimit-portfolio-backend.herokuapp.com/testing").then(
+      (res) => {
+        res.json().then((res) => {
+          console.log(res);
+        });
+      }
+    );
+
     fetch("https://nimit-portfolio-backend.herokuapp.com/jumbtron").then(
       (res) => {
         res.json().then((res) => {
