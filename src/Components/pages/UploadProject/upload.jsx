@@ -22,15 +22,15 @@ class Upload extends Component {
     console.log(event.target.value);
     this.setState({ [event.target.name]: event.target.value });
 
-    if (event.target.name == "status") {
-      if (event.target.value == "on") {
+    if (event.target.name === "status") {
+      if (event.target.value === "on") {
         this.setState({ [event.target.name]: "completed" });
       } else {
         this.setState({ [event.target.name]: "" });
       }
     }
 
-    if (event.target.name == "thumbnail") {
+    if (event.target.name === "thumbnail") {
       const toBase64 = (file) =>
         new Promise((resolve, reject) => {
           const reader = new FileReader();
