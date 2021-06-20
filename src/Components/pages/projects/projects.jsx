@@ -58,11 +58,19 @@ class Projects extends Component {
   }
 
   componentDidMount() {
-    fetch("https://nimit-portfolio-backend.herokuapp.com/projects").then(
+    // fetch("https://nimit-portfolio-backend.herokuapp.com/testing").then(
+    //   (res) => {
+    //     res.json().then((res) => {
+    //       console.log(res.projectsList);
+    //     });
+    //   }
+    // );
+
+    fetch("https://nimit-portfolio-backend.herokuapp.com/testing").then(
       (res) => {
         res.json().then((res) => {
           console.log(res.projectsList);
-          this.setState({ projectList: res.projectsList });
+          this.setState({ projectList: res });
         });
       }
     );

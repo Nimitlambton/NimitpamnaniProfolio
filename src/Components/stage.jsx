@@ -4,7 +4,7 @@ import Projects from "./pages/projects/projects";
 import Designs from "./pages/Designs/Designs";
 import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/contact";
-
+import Upload from "./pages/UploadProject/upload";
 class Stage extends React.Component {
   constructor(props) {
     super();
@@ -26,6 +26,9 @@ class Stage extends React.Component {
 
       case "contact":
         return <Contact> </Contact>;
+
+      case "Upload":
+        return <Upload> </Upload>;
 
       default:
         return <> Error 404 </>;
