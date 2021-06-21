@@ -18,14 +18,6 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    fetch("https://nimit-portfolio-backend.herokuapp.com/testing").then(
-      (res) => {
-        res.json().then((res) => {
-          console.log(res);
-        });
-      }
-    );
-
     fetch("https://nimit-portfolio-backend.herokuapp.com/jumbtron").then(
       (res) => {
         res.json().then((res) => {
@@ -51,8 +43,24 @@ class Home extends Component {
                 <Jumbotron>
                   <h1>{this.state.jumbtron.h1} </h1>
                   <p>{this.state.jumbtron.p2}</p>
+                  <p>
+                    I live in
+                    <svg
+                      height="20px"
+                      width="30px"
+                      fill="#000000"
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 100 100">
+                      <path
+                        fill="#000000"
+                        d="M56.121,37.322l1.432-1.835c0.271-0.349,0.32-0.823,0.126-1.219c-0.132-0.271-0.363-0.472-0.637-0.574  l-1.344-1.286l-0.254-0.244v-1.121v-1.435h-3.588v-8.625h0.007l0.611-0.405v-1.011h-1.122v-5.933H50.99v-2.913h-0.487V5.949V5.888  V0.918h-1.141v4.969v0.061v4.772h-0.488v2.913h-0.362v5.933h-1.096v1.006l0.614,0.41h0.003v8.625h-3.592v1.435v1.106l-0.268,0.258  l-1.334,1.287c-0.273,0.102-0.503,0.304-0.635,0.575c-0.193,0.399-0.143,0.873,0.131,1.221l1.429,1.818v0.016  c0,0.009,0.001,0.018,0.001,0.027c-0.469,0.294-0.781,0.807-0.781,1.392c0,0.911,0.755,1.652,1.684,1.652h3.163l-2.542,58.612h8.944  l-2.094-58.612h3.078c0.928,0,1.684-0.741,1.684-1.652c0-0.585-0.313-1.098-0.779-1.392c0-0.009,0-0.018,0-0.027V37.322z"></path>
+                    </svg>
+                    Toronto , city ,🇨🇦 but i call many places my home. (🇮🇳)
+                  </p>
                   <p>{this.state.jumbtron.p} </p>
-
                   <a href={Resume} download="Nimitpamnani">
                     <button className="btn-primary rounded">
                       Download Resume
@@ -61,6 +69,13 @@ class Home extends Component {
                   <p>
                     <br></br>
                     <Badge> Lets connect : </Badge> &nbsp; &nbsp;
+                    <a
+                      href="https://www.instagram.com/nimit_pamnani/"
+                      target="_blank"
+                      rel="noreferrer">
+                      <FontAwesomeIcon icon={["fab", "youtube"]} size="lg" />
+                    </a>
+                    &nbsp; &nbsp;
                     <a
                       href="https://github.com/nimitlambton"
                       target="_blank"
@@ -81,6 +96,7 @@ class Home extends Component {
                       rel="noreferrer">
                       <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
                     </a>
+                    &nbsp; &nbsp;
                   </p>
                 </Jumbotron>
               </div>
