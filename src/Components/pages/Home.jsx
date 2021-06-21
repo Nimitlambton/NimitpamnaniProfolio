@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Resume from "../Assets/Resume.pdf";
 import HeroImg from "../Assets/heroImg.jpg";
 
-//dunjo
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -42,7 +41,7 @@ class Home extends Component {
               <div>
                 <Jumbotron>
                   <h1>{this.state.jumbtron.h1} </h1>
-                  <p>{this.state.jumbtron.p2}</p>
+                  <p> {this.state.jumbtron.p2} </p>
                   <p>
                     I live in
                     <svg
@@ -60,7 +59,24 @@ class Home extends Component {
                     </svg>
                     Toronto , city ,🇨🇦 but i call many places my home. (🇮🇳)
                   </p>
-                  <p>{this.state.jumbtron.p} </p>
+                  <p>
+                    {" "}
+                    <b> {this.state.jumbtron.p} </b>{" "}
+                  </p>
+                  &nbsp; &nbsp;
+                  <p>
+                    {" "}
+                    Currently I am trying to master <b> MERN </b>Stack (MERN
+                    stack stands for -:
+                    <ul>
+                      <li> M -> MONGODB </li> <li> E -> Express.js </li>{" "}
+                      <li> R-> React.js </li> <li> N -> Node.js </li>{" "}
+                    </ul>{" "}
+                    ) & <b>ReactNative</b> 🧑🏽‍💻
+                    {
+                      "( React native is  popular cross-platform mobile native framework  used in making mobile application) "
+                    }
+                  </p>
                   <a href={Resume} download="Nimitpamnani">
                     <button className="btn-primary rounded">
                       Download Resume
@@ -98,6 +114,11 @@ class Home extends Component {
                     </a>
                     &nbsp; &nbsp;
                   </p>
+                  <button
+                    className="btn-primary rounded"
+                    onClick={() => this.props.stage("home")}>
+                    Have a look 👀 at some of my interesting projects
+                  </button>
                 </Jumbotron>
               </div>
             </Col>

@@ -15,14 +15,6 @@ class Welcome extends Component {
 
     library.add(fab, faExternalLinkAlt);
     this.changeStageType = this.changeStageType.bind(this);
-
-    fetch("https://back-portfolio.netlify.app/.netlify/functions/api").then(
-      (res) => {
-        res.json().then((res) => {
-          console.log(res.hello);
-        });
-      }
-    );
   }
 
   changeStageType(type) {
