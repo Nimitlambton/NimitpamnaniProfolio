@@ -116,7 +116,7 @@ class Home extends Component {
                   </p>
                   <button
                     className="btn-primary rounded"
-                    onClick={() => this.props.stage("home")}>
+                    onClick={() => this.props.sta("projects")}>
                     Have a look 👀 at some of my interesting projects
                   </button>
                 </Jumbotron>

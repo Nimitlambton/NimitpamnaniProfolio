@@ -13,7 +13,7 @@ class Stage extends React.Component {
   render() {
     switch (this.props.stage) {
       case "home":
-        return <Home> </Home>;
+        return <Home sta={this.props.stagefun}> </Home>;
 
       case "projects":
         return <Projects></Projects>;

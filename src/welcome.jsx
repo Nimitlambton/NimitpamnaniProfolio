@@ -35,7 +35,9 @@ class Welcome extends Component {
             position: "relative",
             paddingbottom: "100",
           }}>
-          <Stage stage={this.state.StageType}> </Stage>
+          <Stage stage={this.state.StageType} stagefun={this.changeStageType}>
+            {" "}
+          </Stage>
         </main>
 
         <div className="fluid-container height-auto">
