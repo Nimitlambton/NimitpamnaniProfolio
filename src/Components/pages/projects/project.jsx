@@ -58,7 +58,7 @@ class Project extends React.Component {
             </Card.Link>
 
             <Card.Link href={DeployedLink} target="_blank">
-              <FontAwesomeIcon icon="external-link-alt" size="lg" />
+              <FontAwesomeIcon icon="external-link-alt" size="lg" /> open
             </Card.Link>
           </Card.Body>
         </Card>

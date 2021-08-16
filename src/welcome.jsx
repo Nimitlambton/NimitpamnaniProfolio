@@ -21,10 +21,12 @@ class Welcome extends Component {
     this.setState({ StageType: type });
     console.log(type);
   }
+  //This functions renders main content of the page , Which consist of nav bar and footer
 
   render() {
     return (
       <>
+        {/* directions are sent from the nav bar to the  stage ,on what content needs to be sent  , content is decided by user by selecting nav bar  */}
         <Nav stage={this.changeStageType}></Nav>
         <main
           className="fluid-container m-4"
@@ -35,9 +37,10 @@ class Welcome extends Component {
             position: "relative",
             paddingbottom: "100",
           }}>
-          <Stage stage={this.state.StageType} stagefun={this.changeStageType}>
-            {" "}
-          </Stage>
+          {/* instructions are sent thru  navbar  tabs , whatever the user selects  , it is send in stage as a prop    */}
+          <Stage
+            stage={this.state.StageType}
+            stagefun={this.changeStageType}></Stage>
         </main>
 
         <div className="fluid-container height-auto">

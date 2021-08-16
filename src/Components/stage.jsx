@@ -9,6 +9,7 @@ class Stage extends React.Component {
   constructor(props) {
     super();
   }
+  //stage reacts on the props that are sent thru navbar, there are several options  that  are send by navbar like projects , contact me etc.
 
   render() {
     switch (this.props.stage) {
