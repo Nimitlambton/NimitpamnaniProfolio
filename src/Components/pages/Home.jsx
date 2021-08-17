@@ -43,7 +43,7 @@ class Home extends Component {
                 height="400 "
                 width="400"></Image>
 
-              <Card style={{ color: "red", width: 400 }}>
+              <Card style={{ color: "red", width: "70%" }}>
                 <Card.Header>Quote of the Day</Card.Header>
                 <Card.Body>
                   <blockquote className="blockquote mb-0">
