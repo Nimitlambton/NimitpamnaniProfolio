@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Jumbotron, Image, Row, Col, Badge } from "react-bootstrap";
+import { Jumbotron, Image, Row, Col, Badge, Card } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,8 +11,10 @@ import HeroImg from "../Assets/heroImg.jpg";
 class Home extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       jumbtron: [],
+      quotesData: [],
     };
   }
 
@@ -24,7 +26,11 @@ class Home extends Component {
         });
       }
     );
+
+    //fetching  quotes of the api and parsing it  after mounting of quotes
+    this.fetchAndParseQuoteOfTheDay();
   }
+
   render() {
     return (
       <>
@@ -36,6 +42,18 @@ class Home extends Component {
                 roundedCircle
                 height="400 "
                 width="400"></Image>
+
+              <Card style={{ color: "red", width: 400 }}>
+                <Card.Header>Quote of the Day</Card.Header>
+                <Card.Body>
+                  <blockquote className="blockquote mb-0">
+                    <p>{this.state.quotesData.quote}</p>
+                    <footer className="blockquote-footer">
+                      <cite>{this.state.quotesData.author}</cite>
+                    </footer>
+                  </blockquote>
+                </Card.Body>
+              </Card>
             </Col>
             <Col>
               <div>
@@ -126,6 +144,17 @@ class Home extends Component {
         </div>
       </>
     );
+  }
+
+  fetchAndParseQuoteOfTheDay() {
+    fetch("https://quotes.rest/qod?language=en").then((res) => {
+      res.json().then((res) => {
+        //  console.log(res.contents.quotes[0]);
+
+        var quotesData = res.contents.quotes[0];
+        this.setState({ quotesData });
+      });
+    });
   }
 }
 
