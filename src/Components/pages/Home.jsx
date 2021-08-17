@@ -38,12 +38,14 @@ class Home extends Component {
           <Row>
             <Col md="auto">
               <Image
+                style={{
+                  margin: "auto",
+                }}
                 src={HeroImg}
-                roundedCircle
-                height="400 "
-                width="400"></Image>
+                height="400"
+                roundedCircle></Image>
 
-              <Card style={{ color: "red", width: "70%" }}>
+              <Card style={{ color: "red", width: "400", margin: "auto" }}>
                 <Card.Header>Quote of the Day</Card.Header>
                 <Card.Body>
                   <blockquote className="blockquote mb-0">
